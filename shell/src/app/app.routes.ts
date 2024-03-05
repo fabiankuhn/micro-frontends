@@ -3,12 +3,12 @@ import {Routes} from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: 'client',
-        loadComponent: () =>
+        path: 'client1',
+        loadChildren: () =>
             loadRemoteModule({
                 type: 'module',
                 remoteEntry: 'http://localhost:4201/remoteEntry.js',
-                exposedModule: './Component'
-            }).then(m => m.AppComponent)
-    },
+                exposedModule: './routes'
+            }).then(m => m.routes)
+    }
 ];
