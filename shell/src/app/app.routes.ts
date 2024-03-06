@@ -2,8 +2,9 @@ import {loadRemoteModule} from '@angular-architects/module-federation';
 import {Routes} from '@angular/router';
 
 export const routes: Routes = [
+    { path: '',   redirectTo: '/product', pathMatch: 'full' },
     {
-        path: 'client1',
+        path: 'product',
         loadChildren: () =>
             loadRemoteModule({
                 type: 'module',
