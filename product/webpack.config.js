@@ -4,7 +4,6 @@ module.exports = withModuleFederationPlugin({
   name: "client",
 
   exposes: {
-    "./Component": "./src/app/app.component.ts",
     "./routes": "./src/app/app.routes.ts",
   },
 

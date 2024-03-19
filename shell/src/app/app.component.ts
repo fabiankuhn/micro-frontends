@@ -16,10 +16,8 @@ import "@ui5/webcomponents-icons/dist/customer.js";
       <img slot="logo" src="/assets/sap-logo.png">
       <ui5-button icon="nav-back" slot="startButton"></ui5-button>
     </ui5-shellbar>
-    <app-nasty></app-nasty>
     <router-outlet />
   `,
 })
 export class AppComponent {
-  title = 'shell';
 }
