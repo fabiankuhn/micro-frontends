@@ -1,15 +1,13 @@
-import {loadRemoteModule} from '@angular-architects/module-federation';
 import {Routes} from '@angular/router';
+import {DashboardComponent} from "./dashboard.component";
 
 export const routes: Routes = [
-    { path: '',   redirectTo: '/product', pathMatch: 'full' },
+    {
+        path: '',
+        component: DashboardComponent,
+    },
     {
         path: 'product',
-        loadChildren: () =>
-            loadRemoteModule({
-                type: 'module',
-                remoteEntry: 'http://localhost:4201/remoteEntry.js',
-                exposedModule: './routes'
-            }).then(m => m.routes)
+        loadChildren: () => import('product/routes').then(m => m.routes)
     }
 ];
