@@ -5,11 +5,17 @@ This repo showcases the use of micro frontends with module federation and web co
 - https://www.angulararchitects.io/blog/getting-out-of-version-mismatch-hell-with-module-federation/
 - https://github.com/edumserrano/webpack-module-federation-with-angular/blob/main/code-demos/component-directive-ng16/shell-ng16/src/app/load-remote-component.directive.ts
 
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="./_docs/Home.png" width="500">
+    <img src="./_docs/Maintenance.png" width="500">
+    <img src="./_docs/Product.png" width="500">
+</div>
+
+
 ## Analysis
 TBD
 
 ## Dev Guide: Loading federated modules
-
 Prerequisites: Set up the webpack shell to consume the federated modules.
 ```js
 // webpack.config.js
