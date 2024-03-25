@@ -43,7 +43,8 @@ module.exports = {
       name: 'productComponent',
       filename: 'remoteEntry.js',
       exposes: {
-        './timeline': './component/timeline-component.js'
+        './timeline': './component/timeline.component.js',
+        './test': './component/test.component.js'
       },
       shared: ['lit-element', '@ui5/webcomponents', '@ui5/webcomponents-fiori']
     }),

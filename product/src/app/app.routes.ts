@@ -3,7 +3,6 @@ import {ProductListComponent} from "./product-list/product-list.component";
 import {MaintenanceComponent} from "./maintenance/maintenance.component";
 import {ProductComponent} from "./product.component";
 
-
 export const routes: Routes = [
     {
         path: '',
